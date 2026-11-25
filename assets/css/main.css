@@ -76,6 +76,8 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-padding-top: 76px; /* 52px topbar + 24px margin */
+		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
@@ -2094,7 +2096,7 @@ input, select, textarea {
 			}
 
 			.image.thumb:hover:before {
-				background: url("images/overlay.png"), url("images/overlay.png");
+				background: linear-gradient(rgba(52, 73, 94, 1), rgba(52, 73, 94, 1));
 				opacity: 1.0;
 			}
 
@@ -2591,9 +2593,9 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: #34495e;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		/*background-image: linear-gradient(rgba(52, 73, 94, 1), rgba(52, 73, 94, 1)), url("../../images/bg.jpg");*/
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -3077,8 +3079,8 @@ input, select, textarea {
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-color: #34495e;
+				/*background-image: linear-gradient(rgba(52, 73, 94, 0.5), rgba(52, 73, 94, 0.5)), url("../../images/bg.jpg");*/
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
